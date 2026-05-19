@@ -91,6 +91,51 @@
           </div>
         </div>
       </section>
+      <section id="tecnologia" class="fundo-alternado">
+        <div class="secao-container">
+          <span class="secao-label">02 · TECNOLOGIA</span>
+          <h2 class="secao-titulo">Como funciona o Orbitrace</h2>
+          <p class="secao-texto">
+            Usa o algoritmo SGP4 e dados públicos do Celestrak/Space-Track para
+            calcular risco de conjunção entre detritos e satélites brasileiros.
+            Um console físico com Arduino exibe os alertas em tempo real.
+          </p>
+          <figure class="secao-figura">
+            <img
+              src="img/satellite.jpg"
+              alt="Satélite CBERS-4A em órbita — um dos três ativos espaciais brasileiros monitorados pelo Orbitrace"
+              class="img-secao"
+            />
+            <figcaption>Satélite CBERS-4A em órbita. Fonte: AEB / INPE</figcaption>
+          </figure>
+          <div class="cards-tecnologia">
+            <div class="card-tec">
+              <img src="img/icone-satelite.svg" alt="Algoritmo SGP4" class="card-tec-icone" />
+              <h3 class="card-tec-titulo">SGP4</h3>
+              <p class="card-tec-desc">
+                Algoritmo padrão NORAD para propagação orbital. Calcula posição
+                futura de qualquer objeto usando dados TLE do Space-Track.
+              </p>
+            </div>
+            <div class="card-tec">
+              <img src="img/icone-satelite.svg" alt="Celestrak" class="card-tec-icone" />
+              <h3 class="card-tec-titulo">Celestrak</h3>
+              <p class="card-tec-desc">
+                Catálogo público e gratuito de TLEs mantido a partir dos dados
+                do NORAD. Fonte de dados do Orbitrace — sem custos de licença.
+              </p>
+            </div>
+            <div class="card-tec">
+              <img src="img/icone-satelite.svg" alt="Arduino" class="card-tec-icone" />
+              <h3 class="card-tec-titulo">Arduino</h3>
+              <p class="card-tec-desc">
+                Console físico de estação terrena com LEDs de semáforo, display
+                OLED e buzzer. Exibe nível de risco BAIXO / MÉDIO / ALTO / CRÍTICO.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="rodape">
       <div class="rodape-container">
