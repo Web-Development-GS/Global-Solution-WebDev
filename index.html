@@ -16,8 +16,16 @@
             <li><a href="#problema">Problema</a></li>
             <li><a href="#tecnologia">Tecnologia</a></li>
             <li><a href="#objetivos">Objetivos</a></li>
+            <li><a href="#slideshow">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#quiz">Quiz</a></li>
           </ul>
         </nav>
+        <div class="tema-seletor" aria-label="Escolher tema de cor">
+          <button class="tema-btn tema-btn-espaco ativo" data-tema="tema-espaco" title="Tema Espaço" aria-label="Tema azul escuro"></button>
+          <button class="tema-btn tema-btn-roxo" data-tema="tema-roxo" title="Tema Roxo" aria-label="Tema roxo"></button>
+          <button class="tema-btn tema-btn-verde" data-tema="tema-verde" title="Tema Verde" aria-label="Tema verde"></button>
+        </div>
       </div>
     </header>
     <main>
@@ -270,6 +278,103 @@
           </div>
         </div>
       </section>
+      <section id="slideshow">
+        <div class="secao-container">
+          <span class="secao-label">07 · GALERIA</span>
+          <h2 class="secao-titulo">Orbitrace em imagens</h2>
+          <div class="slideshow-wrapper">
+            <div class="slideshow" id="slideshow-inner">
+              <div class="slide ativo">
+                <img src="img/slide1.svg" alt="Detritos espaciais em órbita terrestre" class="slide-img" />
+                <div class="slide-legenda">Detritos espaciais em órbita terrestre baixa (LEO)</div>
+              </div>
+              <div class="slide">
+                <img src="img/slide2.svg" alt="Satélites brasileiros monitorados pelo Orbitrace" class="slide-img" />
+                <div class="slide-legenda">Satélites brasileiros: CBERS-4A, Amazonia-1 e SCD-2</div>
+              </div>
+              <div class="slide">
+                <img src="img/slide3.svg" alt="Console Arduino do Orbitrace com alertas em tempo real" class="slide-img" />
+                <div class="slide-legenda">Console físico Arduino com alertas em tempo real</div>
+              </div>
+            </div>
+            <button class="slide-btn slide-prev" id="slide-prev" aria-label="Slide anterior">&#8592;</button>
+            <button class="slide-btn slide-next" id="slide-next" aria-label="Próximo slide">&#8594;</button>
+            <div class="slide-indicadores">
+              <button class="slide-dot ativo" data-idx="0" aria-label="Slide 1"></button>
+              <button class="slide-dot" data-idx="1" aria-label="Slide 2"></button>
+              <button class="slide-dot" data-idx="2" aria-label="Slide 3"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contato" class="fundo-alternado">
+        <div class="secao-container">
+          <span class="secao-label">08 · CONTATO</span>
+          <h2 class="secao-titulo">Fale com a equipe</h2>
+          <p class="secao-texto">Tem interesse no Orbitrace? Preencha o formulário abaixo.</p>
+          <form class="form-contato" id="form-contato" novalidate>
+            <div class="form-grupo">
+              <label for="nome" class="form-label">Nome completo *</label>
+              <input type="text" id="nome" name="nome" class="form-input" placeholder="Seu nome" />
+              <span class="form-erro-msg" id="erro-nome">Por favor, informe seu nome.</span>
+            </div>
+            <div class="form-grupo">
+              <label for="email" class="form-label">E-mail *</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" />
+              <span class="form-erro-msg" id="erro-email">Por favor, informe um e-mail válido.</span>
+            </div>
+            <div class="form-grupo">
+              <label for="instituicao" class="form-label">Instituição</label>
+              <input type="text" id="instituicao" name="instituicao" class="form-input" placeholder="Sua instituição (opcional)" />
+            </div>
+            <div class="form-grupo">
+              <label for="assunto" class="form-label">Assunto *</label>
+              <select id="assunto" name="assunto" class="form-input">
+                <option value="">Selecione um assunto</option>
+                <option value="parceria">Parceria / Colaboração</option>
+                <option value="pesquisa">Pesquisa Acadêmica</option>
+                <option value="imprensa">Imprensa</option>
+                <option value="outro">Outro</option>
+              </select>
+              <span class="form-erro-msg" id="erro-assunto">Por favor, selecione um assunto.</span>
+            </div>
+            <div class="form-grupo">
+              <label for="mensagem" class="form-label">Mensagem *</label>
+              <textarea id="mensagem" name="mensagem" class="form-input form-textarea" placeholder="Escreva sua mensagem..." rows="5"></textarea>
+              <span class="form-erro-msg" id="erro-mensagem">Por favor, escreva sua mensagem.</span>
+            </div>
+            <button type="submit" class="btn-primario btn-enviar">Enviar mensagem</button>
+            <div class="form-sucesso" id="form-sucesso" role="alert" aria-live="polite">
+              Mensagem enviada com sucesso! Entraremos em contato em breve.
+            </div>
+          </form>
+        </div>
+      </section>
+      <section id="quiz">
+        <div class="secao-container">
+          <span class="secao-label">09 · QUIZ</span>
+          <h2 class="secao-titulo">Teste seus conhecimentos</h2>
+          <p class="secao-texto">10 perguntas sobre detritos espaciais e o programa espacial brasileiro.</p>
+          <div class="quiz-container" id="quiz-container">
+            <div class="quiz-progresso">
+              <span class="quiz-progresso-texto" id="quiz-progresso-texto">Pergunta 1 de 10</span>
+              <div class="quiz-barra-wrapper">
+                <div class="quiz-barra" id="quiz-barra"></div>
+              </div>
+              <span class="quiz-progresso-texto" id="quiz-pontos-texto">0 acertos</span>
+            </div>
+            <div class="quiz-pergunta-box" id="quiz-pergunta-box">
+              <p class="quiz-pergunta" id="quiz-pergunta"></p>
+              <div class="quiz-opcoes" id="quiz-opcoes"></div>
+            </div>
+            <div class="quiz-resultado" id="quiz-resultado" style="display:none;">
+              <h3 class="quiz-resultado-titulo" id="quiz-resultado-titulo"></h3>
+              <p class="quiz-resultado-desc" id="quiz-resultado-desc"></p>
+              <button class="btn-primario" id="quiz-reiniciar">Jogar novamente</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="rodape">
       <div class="rodape-container">
@@ -280,8 +385,18 @@
           <p>Pedro Thyago Araújo dos Santos — RM: 570939</p>
           <p>Pedro Passos Corsini — RM: 573493</p>
         </div>
-        <p class="rodape-info">Global Solution 2026 · FIAP · Engenharia de Software · ODS 9</p>
+        <div class="rodape-direita">
+          <a href="https://github.com/Web-Development-GS/Global-Solution-WebDev" target="_blank" rel="noopener noreferrer" class="rodape-github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <p class="rodape-info">Global Solution 2026 · FIAP · Engenharia de Software · ODS 9</p>
+        </div>
       </div>
     </footer>
+    <script src="js/tema.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/formulario.js"></script>
+    <script src="js/quiz.js"></script>
   </body>
 </html>
