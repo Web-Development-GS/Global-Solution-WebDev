@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --cor-fundo:        #0a1628;
+  --cor-superficie:   #1e293b;
+  --cor-alternada:    #111c2e;
+  --cor-accent:       #2563eb;
+  --cor-alerta:       #dc2626;
+  --cor-accent-sutil: rgba(37, 99, 235, 0.1);
+  --cor-texto:        #f1f5f9;
+  --cor-texto-mute:   #94a3b8;
+  --fonte-titulo:     'Space Grotesk', sans-serif;
+  --fonte-corpo:      'Inter', sans-serif;
+  --raio:             8px;
+  --espaco-secao:     4rem;
+}
+
+/* ── TEMA ROXO ── */
+.tema-roxo {
+  --cor-fundo:        #0f0a1e;
+  --cor-superficie:   #1e1535;
+  --cor-alternada:    #140d2a;
+  --cor-accent:       #7c3aed;
+  --cor-accent-sutil: rgba(124, 58, 237, 0.1);
+}
+
+/* ── TEMA VERDE ── */
+.tema-verde {
+  --cor-fundo:        #071a10;
+  --cor-superficie:   #112b1a;
+  --cor-alternada:    #0a2014;
+  --cor-accent:       #16a34a;
+  --cor-accent-sutil: rgba(22, 163, 74, 0.1);
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte-corpo);
+  line-height: 1.6;
+}
