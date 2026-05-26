@@ -198,3 +198,287 @@ header {
 }
 
 .btn-secundario:hover { background-color: var(--cor-accent-sutil); }
+
+/* ── ESTILOS GERAIS DE SEÇÃO ── */
+.secao-label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: var(--cor-accent);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.secao-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: var(--cor-texto);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.secao-texto {
+  color: var(--cor-texto-mute);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  max-width: 680px;
+  margin-bottom: 2rem;
+}
+
+.secao-figura { margin: 2rem 0; }
+
+.img-secao {
+  width: 100%;
+  height: auto;
+  border-radius: var(--raio);
+  display: block;
+}
+
+.secao-figura figcaption {
+  font-size: 0.75rem;
+  color: var(--cor-texto-mute);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.fundo-alternado {
+  background-color: var(--cor-alternada);
+  border-bottom: 1px solid var(--cor-superficie);
+}
+
+/* ── SEÇÃO PROBLEMA ── */
+#problema { border-bottom: 1px solid var(--cor-superficie); }
+
+.problema-layout {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.problema-texto { flex: 1; min-width: 0; }
+
+.problema-figura { flex: 0 0 380px; margin: 0; }
+
+.cards-dados {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card-dado {
+  background-color: var(--cor-superficie);
+  border-radius: var(--raio);
+  padding: 1.25rem;
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.card-numero {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: var(--cor-accent);
+}
+
+.card-numero.vermelho { color: var(--cor-alerta); }
+
+.card-descricao {
+  font-size: 0.78rem;
+  color: var(--cor-texto-mute);
+  line-height: 1.4;
+}
+
+/* ── CARDS TECNOLOGIA ── */
+.cards-tecnologia {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.card-tec {
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-superficie);
+  border-radius: var(--raio);
+  padding: 1.5rem;
+  flex: 1;
+  min-width: 220px;
+  transition: border-color 0.2s;
+}
+
+.card-tec:hover { border-color: var(--cor-accent); }
+
+.card-tec-icone { width: 32px; height: 32px; margin-bottom: 0.75rem; }
+
+.card-tec-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+  margin-bottom: 0.5rem;
+}
+
+.card-tec-desc { font-size: 0.85rem; color: var(--cor-texto-mute); line-height: 1.6; }
+
+/* ── SEÇÃO OBJETIVOS ── */
+#objetivos { border-bottom: 1px solid var(--cor-superficie); }
+
+.cards-satelite {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.card-sat {
+  background-color: var(--cor-superficie);
+  border-left: 3px solid var(--cor-accent);
+  border-radius: 0 var(--raio) var(--raio) 0;
+  padding: 1.5rem;
+  flex: 1;
+  min-width: 220px;
+}
+
+.card-sat-nome {
+  font-family: var(--fonte-titulo);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--cor-texto);
+  margin-bottom: 0.25rem;
+}
+
+.card-sat-info { font-size: 0.8rem; color: var(--cor-accent); margin-bottom: 0.75rem; }
+
+.card-sat-dados { display: flex; flex-direction: column; gap: 0.4rem; }
+
+.card-sat-dados li {
+  font-size: 0.82rem;
+  color: var(--cor-texto-mute);
+  padding-left: 0.75rem;
+  position: relative;
+}
+
+.card-sat-dados li::before { content: '·'; position: absolute; left: 0; color: var(--cor-accent); }
+
+/* ── CHIPS PÚBLICO-ALVO ── */
+.chips-publico { display: flex; flex-direction: column; gap: 0.75rem; }
+
+.chip {
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-superficie);
+  border-radius: var(--raio);
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.chip strong {
+  display: block;
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--cor-texto);
+  margin-bottom: 0.2rem;
+}
+
+.chip span { font-size: 0.83rem; color: var(--cor-texto-mute); }
+
+/* ── CARDS BENEFÍCIOS ── */
+#beneficios { border-bottom: 1px solid var(--cor-superficie); }
+
+.cards-beneficio {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.card-ben {
+  background-color: var(--cor-superficie);
+  border-radius: var(--raio);
+  padding: 1.5rem;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card-ben:hover { transform: translateY(-4px); }
+
+.card-ben-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+  margin-bottom: 0.5rem;
+}
+
+.card-ben-desc { font-size: 0.82rem; color: var(--cor-texto-mute); line-height: 1.6; }
+
+/* ── CENÁRIOS ── */
+.cenarios { display: flex; flex-direction: column; gap: 1rem; }
+
+.cenario {
+  background-color: var(--cor-fundo);
+  border-left: 3px solid var(--cor-accent);
+  border-radius: 0 var(--raio) var(--raio) 0;
+  padding: 1.25rem 1.5rem;
+}
+
+.cenario-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+  margin-bottom: 0.5rem;
+}
+
+.cenario-desc { font-size: 0.88rem; color: var(--cor-texto-mute); line-height: 1.7; }
+
+/* ── RODAPÉ ── */
+footer {
+  background-color: var(--cor-fundo);
+  border-top: 1px solid var(--cor-superficie);
+}
+
+.rodape-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.rodape-logo {
+  font-family: var(--fonte-titulo);
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: var(--cor-accent);
+  letter-spacing: 2px;
+}
+
+.rodape-integrantes { display: flex; flex-direction: column; gap: 0.2rem; }
+
+.rodape-integrantes p { font-size: 0.78rem; color: var(--cor-texto-mute); line-height: 1.5; }
+
+.rodape-direita { display: flex; flex-direction: column; align-items: flex-end; gap: 0.5rem; }
+
+.rodape-github {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--cor-texto-mute);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.rodape-github:hover { color: var(--cor-texto); }
+
+.rodape-info { font-size: 0.78rem; color: var(--cor-texto-mute); }
