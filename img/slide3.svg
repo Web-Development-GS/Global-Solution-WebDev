@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" style="background:#0a1628">
+  <!-- Console box -->
+  <rect x="180" y="50" width="440" height="280" rx="12" fill="#1e293b" stroke="#2563eb" stroke-width="2"/>
+  <!-- Console header -->
+  <rect x="180" y="50" width="440" height="40" rx="12" fill="#2563eb"/>
+  <rect x="180" y="70" width="440" height="20" fill="#2563eb"/>
+  <circle cx="205" cy="70" r="6" fill="#dc2626"/>
+  <circle cx="225" cy="70" r="6" fill="#f59e0b"/>
+  <circle cx="245" cy="70" r="6" fill="#22c55e"/>
+  <text x="400" y="76" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="white" font-weight="600">ORBITRACE — Console de Monitoramento</text>
+  <!-- Status labels -->
+  <text x="210" y="120" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8">SATÉLITE</text>
+  <text x="380" y="120" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8">DISTÂNCIA MÍN.</text>
+  <text x="530" y="120" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8">STATUS</text>
+  <!-- Divider -->
+  <line x1="195" y1="128" x2="605" y2="128" stroke="#334155" stroke-width="1"/>
+  <!-- Row 1 -->
+  <text x="210" y="150" font-family="Inter,sans-serif" font-size="12" fill="#f1f5f9">CBERS-4A</text>
+  <text x="380" y="150" font-family="Inter,sans-serif" font-size="12" fill="#f1f5f9">2.4 km</text>
+  <rect x="525" y="137" width="70" height="20" rx="4" fill="rgba(234,179,8,0.2)" stroke="#eab308" stroke-width="1"/>
+  <text x="560" y="151" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#eab308" font-weight="600">MÉDIO</text>
+  <!-- Row 2 -->
+  <text x="210" y="185" font-family="Inter,sans-serif" font-size="12" fill="#f1f5f9">AMAZONIA-1</text>
+  <text x="380" y="185" font-family="Inter,sans-serif" font-size="12" fill="#f1f5f9">0.6 km</text>
+  <rect x="525" y="172" width="70" height="20" rx="4" fill="rgba(220,38,38,0.2)" stroke="#dc2626" stroke-width="1"/>
+  <text x="560" y="186" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#dc2626" font-weight="600">CRÍTICO</text>
+  <!-- Row 3 -->
+  <text x="210" y="220" font-family="Inter,sans-serif" font-size="12" fill="#f1f5f9">SCD-2</text>
+  <text x="380" y="220" font-family="Inter,sans-serif" font-size="12" fill="#f1f5f9">12.3 km</text>
+  <rect x="525" y="207" width="70" height="20" rx="4" fill="rgba(34,197,94,0.2)" stroke="#22c55e" stroke-width="1"/>
+  <text x="560" y="221" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#22c55e" font-weight="600">BAIXO</text>
+  <!-- Divider -->
+  <line x1="195" y1="235" x2="605" y2="235" stroke="#334155" stroke-width="1"/>
+  <!-- Arduino section -->
+  <text x="210" y="260" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Console Arduino · Alerta ativo:</text>
+  <rect x="340" y="246" width="120" height="24" rx="4" fill="rgba(220,38,38,0.3)" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="400" y="262" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#fca5a5" font-weight="700">AMAZONIA-1 !</text>
+  <!-- Timestamp -->
+  <text x="210" y="300" font-family="Inter,sans-serif" font-size="10" fill="#475569">Última atualização: 09/06/2026 00:49 UTC · Dados: Celestrak / Space-Track</text>
+  <!-- Label -->
+  <text x="400" y="355" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" fill="#94a3b8">Console físico Arduino com alertas em tempo real — BAIXO / MÉDIO / ALTO / CRÍTICO</text>
+</svg>
