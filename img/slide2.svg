@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" style="background:#0a1628">
+  <!-- Stars -->
+  <circle cx="50" cy="40" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="120" cy="90" r="1" fill="white" opacity="0.5"/>
+  <circle cx="680" cy="60" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="740" cy="120" r="1" fill="white" opacity="0.5"/>
+  <circle cx="90" cy="300" r="1" fill="white" opacity="0.4"/>
+  <circle cx="710" cy="310" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="30" cy="180" r="1" fill="white" opacity="0.5"/>
+  <circle cx="770" cy="200" r="1" fill="white" opacity="0.4"/>
+  <circle cx="200" cy="30" r="1" fill="white" opacity="0.5"/>
+  <circle cx="600" cy="350" r="1" fill="white" opacity="0.4"/>
+  <!-- Earth small -->
+  <circle cx="400" cy="350" r="60" fill="#1e3a5f" stroke="#2563eb" stroke-width="1.5" opacity="0.8"/>
+  <ellipse cx="385" cy="340" rx="18" ry="13" fill="#16a34a" opacity="0.6"/>
+  <!-- Orbit arcs -->
+  <ellipse cx="400" cy="320" rx="230" ry="75" fill="none" stroke="#2563eb" stroke-width="1" stroke-dasharray="8 5" opacity="0.4"/>
+  <ellipse cx="400" cy="310" rx="300" ry="100" fill="none" stroke="#7c3aed" stroke-width="1" stroke-dasharray="8 5" opacity="0.3"/>
+  <!-- CBERS-4A Satellite -->
+  <g transform="translate(170,110)">
+    <rect x="-18" y="-8" width="36" height="16" rx="3" fill="#2563eb"/>
+    <rect x="-46" y="-4" width="24" height="8" rx="1" fill="#1e40af" opacity="0.9"/>
+    <rect x="22" y="-4" width="24" height="8" rx="1" fill="#1e40af" opacity="0.9"/>
+    <circle cx="0" cy="0" r="5" fill="#93c5fd"/>
+    <text x="0" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#93c5fd" font-weight="700">CBERS-4A</text>
+    <text x="0" y="42" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#64748b">628 km · Polar</text>
+  </g>
+  <!-- AMAZONIA-1 Satellite -->
+  <g transform="translate(400,90)">
+    <rect x="-18" y="-8" width="36" height="16" rx="3" fill="#16a34a"/>
+    <rect x="-46" y="-4" width="24" height="8" rx="1" fill="#15803d" opacity="0.9"/>
+    <rect x="22" y="-4" width="24" height="8" rx="1" fill="#15803d" opacity="0.9"/>
+    <circle cx="0" cy="0" r="5" fill="#86efac"/>
+    <text x="0" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#86efac" font-weight="700">AMAZONIA-1</text>
+    <text x="0" y="42" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#64748b">752 km · Helio-síncrona</text>
+  </g>
+  <!-- SCD-2 Satellite -->
+  <g transform="translate(620,110)">
+    <rect x="-18" y="-8" width="36" height="16" rx="3" fill="#7c3aed"/>
+    <rect x="-46" y="-4" width="24" height="8" rx="1" fill="#6d28d9" opacity="0.9"/>
+    <rect x="22" y="-4" width="24" height="8" rx="1" fill="#6d28d9" opacity="0.9"/>
+    <circle cx="0" cy="0" r="5" fill="#c4b5fd"/>
+    <text x="0" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#c4b5fd" font-weight="700">SCD-2</text>
+    <text x="0" y="42" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#64748b">750 km · Desde 1998</text>
+  </g>
+  <!-- Label -->
+  <text x="400" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" fill="#f1f5f9" font-weight="600">Satélites Brasileiros Monitorados pelo Orbitrace</text>
+</svg>
