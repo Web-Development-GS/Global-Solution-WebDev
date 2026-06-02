@@ -1,0 +1,12 @@
+Equipe Orbitrace — Global Solution 2026
+FIAP — Engenharia de Software — 1ESPU
+
+Integrantes:
+- Daniel Gomes Torres     — RM: 573436
+- Henrique Lira           — RM: 571009
+- Pedro Thyago Araújo dos Santos — RM: 570939
+- Pedro Passos Corsini    — RM: 573493
+
+Projeto: Orbitrace — Rastreador de Detritos Espaciais Brasileiros
+ODS: 9 — Indústria, Inovação e Infraestrutura
+Repositório: https://github.com/Web-Development-GS/Global-Solution-WebDev
