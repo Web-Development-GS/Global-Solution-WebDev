@@ -47,4 +47,13 @@
       el.addEventListener('input', function () { el.classList.remove('invalido'); });
     }
   });
+
+  /* Auto-expand textarea */
+  var textarea = document.getElementById('mensagem');
+  if (textarea) {
+    textarea.addEventListener('input', function () {
+      textarea.style.height = 'auto';
+      textarea.style.height = textarea.scrollHeight + 'px';
+    });
+  }
 })();

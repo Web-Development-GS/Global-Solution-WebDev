@@ -616,7 +616,7 @@ footer {
 .form-input:focus { outline: none; border-color: var(--cor-accent); }
 .form-input.invalido { border-color: var(--cor-alerta); }
 
-.form-textarea { resize: vertical; min-height: 120px; }
+.form-textarea { resize: none; overflow: hidden; min-height: 80px; }
 
 .form-erro-msg { display: none; color: var(--cor-alerta); font-size: 0.78rem; }
 
