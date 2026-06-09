@@ -154,7 +154,4 @@
   <text x="522" y="315" font-family="'Space Grotesk',Inter,sans-serif" font-size="28" fill="#f1f5f9" font-weight="800">27.000 km/h</text>
   <text x="522" y="332" font-family="Inter,sans-serif" font-size="10" fill="#475569">energia cinética maior que uma bala</text>
 
-  <!-- Footer tag -->
-  <rect x="522" y="316" width="120" height="20" rx="4" fill="rgba(37,99,235,0.15)" stroke="#2563eb" stroke-width="0.8"/>
-  <text x="582" y="330" text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" fill="#2563eb" font-weight="600">ODS 9 · FIAP 2026</text>
 </svg>
