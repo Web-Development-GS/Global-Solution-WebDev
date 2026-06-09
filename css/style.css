@@ -490,6 +490,7 @@ footer {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
+  user-select: none;
 }
 
 .slideshow {
@@ -497,14 +498,28 @@ footer {
   overflow: hidden;
   border-radius: var(--raio);
   background: var(--cor-superficie);
+  height: 380px;
 }
 
-.slide { display: none; position: relative; }
-.slide.ativo { display: block; }
+.slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.65s ease;
+  pointer-events: none;
+}
+
+.slide.ativo {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}
 
 .slide-img {
   width: 100%;
-  height: 380px;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -514,31 +529,41 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%);
   color: var(--cor-texto);
-  padding: 0.75rem 1rem;
-  font-size: 0.85rem;
+  padding: 1.5rem 1rem 0.75rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
 }
 
 .slide-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.45);
   color: white;
-  border: none;
-  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255,255,255,0.15);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  font-size: 1.2rem;
-  border-radius: var(--raio);
+  font-size: 1.1rem;
+  border-radius: 50%;
   z-index: 10;
-  transition: background 0.2s;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+  backdrop-filter: blur(4px);
 }
 
-.slide-btn:hover { background: var(--cor-accent); }
+.slide-btn:hover {
+  background: var(--cor-accent);
+  border-color: var(--cor-accent);
+  transform: translateY(-50%) scale(1.1);
+}
 
-.slide-prev { left: 0.5rem; }
-.slide-next { right: 0.5rem; }
+.slide-prev { left: 0.75rem; }
+.slide-next { right: 0.75rem; }
 
 .slide-indicadores {
   display: flex;
@@ -548,16 +573,21 @@ footer {
 }
 
 .slide-dot {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: var(--cor-superficie);
   border: 2px solid var(--cor-accent);
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.25s, transform 0.25s, width 0.3s;
 }
 
-.slide-dot.ativo { background: var(--cor-accent); }
+.slide-dot.ativo {
+  background: var(--cor-accent);
+  width: 24px;
+  border-radius: 4px;
+  transform: none;
+}
 
 /* ── FORMULÁRIO ── */
 .form-contato { max-width: 600px; }
